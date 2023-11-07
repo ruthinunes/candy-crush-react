@@ -20,11 +20,12 @@ function Board() {
   return (
     <div className="board">
       {randomCandiesArray.map((candy, index) => (
-        <div
+        <img
           className="cell"
           key={index}
           style={{ backgroundColor: candy }}
-        ></div>
+          alt={candy}
+        />
       ))}
     </div>
   );
